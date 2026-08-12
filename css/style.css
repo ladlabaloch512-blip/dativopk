@@ -1619,6 +1619,7 @@ h1, h2, h3, h4, h5, h6 {
   .kpi-row { grid-template-columns: repeat(2, 1fr); }
   .charts-row { grid-template-columns: 1fr; }
   .contact-strip-inner { grid-template-columns: 1fr; }
+  .community-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
 @media (max-width: 900px) {
@@ -1633,13 +1634,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 640px) {
   .container { padding: 0 18px; }
-  .hero { padding: 120px 0 48px; }
+  .hero { padding: 120px 0 48px; text-align: center; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; }
-  .hero-tracks { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .hero-tracks { flex-direction: column; align-items: center; gap: 10px; }
   .hero-track-divider { display: none; }
-  .section-head h2 { font-size: 1.8rem; }
-  .section-head { margin-bottom: 32px; }
+  .section-head { margin-bottom: 32px; text-align: center; }
+  .section-head h2 { font-size: 1.8rem; text-align: center; }
+  .hero-headline { text-align: center; }
   .portfolio-section, .lab-section, .benefits-section,
   .reviews-section, .community-section, .contact-section, .contact-strip {
     padding: 64px 0;
@@ -1647,14 +1649,18 @@ h1, h2, h3, h4, h5, h6 {
   .program-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; padding-bottom: 40px; }
   .contact-form { padding: 24px; }
+  .comment-form { padding: 24px; }
   .kpi-row { grid-template-columns: 1fr; }
+  .community-grid { grid-template-columns: 1fr; gap: 32px; }
   .community-stats { flex-direction: column; gap: 20px; text-align: center; }
+  .community-info-card { padding: 24px; text-align: center; }
   .lab-tabs { flex-direction: column; }
-  .tab-btn { text-align: left; }
+  .tab-btn { text-align: center; }
   .dashboard-container { padding: 16px; }
-  .dashboard-header { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .dashboard-header { flex-direction: column; gap: 12px; align-items: center; text-align: center; }
   .modal { padding: 28px 22px; max-height: 90vh; }
-  .modal-title { font-size: 1.35rem; }
+  .modal-title { font-size: 1.35rem; text-align: center; }
+  .modal-desc { text-align: center; }
   .whatsapp-label { display: none; }
   .whatsapp-float:hover { padding: 14px; }
 }
